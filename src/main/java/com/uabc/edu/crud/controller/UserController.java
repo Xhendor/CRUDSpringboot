@@ -51,7 +51,7 @@ public class UserController {
 
 
     @PostMapping("/adduser")
-    @Secured("ROLE_USER")
+        @Secured("ROLE_USER")
     public String addUser(User user, BindingResult result, Model model) {
 
         if (result.hasErrors()) {

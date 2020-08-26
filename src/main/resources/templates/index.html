@@ -26,16 +26,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="userSecurity : ${users}">
-                    <td th:text="${userSecurity.name}"></td>
-                    <td th:text="${userSecurity.email}"></td>
-                    <td><a th:href="@{/edit/{id}(id=${userSecurity.id})}" class="btn btn-primary"><i class="fas fa-userSecurity-edit ml-2"></i></a></td>
-                    <td><a th:href="@{/eliminar/{id}(id=${userSecurity.id})}" class="btn btn-primary"><i class="fas fa-userSecurity-times ml-2"></i></a></td>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td><a th:href="@{//{id}(id=${user.id})}" class="btn btn-primary"><i class="fas fa-userSecurity-edit ml-2"></i></a></td>
+                    <td><a th:href="@{/eliminar/{id}(id=${user.id})}" class="btn btn-primary"><i class="fas fa-userSecurity-times ml-2"></i></a></td>
                 </tr>
                 </tbody>
             </table>
         </div>
-        <p class="my-5"><a href="/agregar" class="btn btn-primary"><i class="fas fa-userSecurity-plus ml-2"></i></a></p>
+        <p class="my-5"><a href="/app/agregar" class="btn btn-primary"><i class="fas fa-userSecurity-plus ml-2"></i></a></p>
     </div>
 </div>
 

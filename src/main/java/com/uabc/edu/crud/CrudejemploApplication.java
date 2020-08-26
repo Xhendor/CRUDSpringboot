@@ -34,6 +34,8 @@ public class CrudejemploApplication {
         return () -> {
             userRepositorySecurity.save(new UserSecurity("coco","12345"));
             userRepositorySecurity.save(new UserSecurity("rambo","12345"));
+            userRepositorySecurity.save(new UserSecurity("reprobar","12345"));
+
             System.err.println("PASE POR AQUI!!!");
         };
     }
